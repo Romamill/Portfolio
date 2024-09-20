@@ -51,11 +51,21 @@ const swiperTestimonial = new Swiper('.testimonial__swiper', {
 
     pagination: {
         el: '.swiper-pagination',
-        dinamicBullets: true,
-        clicable: true,
+        dynamicBullets: true,
+        clickable: true,
       
-  },
+    },
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+    },
 
 })
 
 /*=============== SHOW SCROLL UP ===============*/ 
+const scrollUp = () => {
+    const scrollUp = document.getElementById('scroll-up')
+    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                     :scrollUp.classList.remove('show-scroll')
+}
+window:addEventListener('scroll', scrollUp)
