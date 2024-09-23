@@ -90,6 +90,10 @@ body {
   transition: background-color 0.4s;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 input,
 button,
 textarea {
@@ -458,7 +462,7 @@ body.dark-theme {
 
 /*=============== SERVICES ===============*/
 
-.cervices__container {
+.services__container {
   row-gap: 2rem;
 }
 
@@ -518,10 +522,10 @@ body.dark-theme {
 }
 
 .services__modal-content::-webkit-scrollbar {
-  width: 6rem;
+  width: 0.6rem;
 }
 
-.services__modal-content::-webkit-thumb {
+.services__modal-content::-webkit-scrollbar-thumb {
   background-color: var(--text-color-light);
 }
 

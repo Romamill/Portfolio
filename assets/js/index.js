@@ -5,6 +5,7 @@ const modal = document.querySelectorAll(`.services__modal`),
 
 let activeModal = (modalClick) => {
     modal[modalClick].classList.add(`active-modal`)
+    document.body.classList.add('modal-open')
 }   
 
 modalButton.forEach((modalButton, i) => {
@@ -24,6 +25,7 @@ let closeModal = () => {
     modal.forEach((modalRemove) => {
         modalRemove.classList.remove(`active-modal`)
     })
+    document.body.classList.remove('modal-open')
 }
 
 
